@@ -624,25 +624,27 @@
           <div class="col-md-12">
             <div class="p-4 text-center bg-light mt-4">
               <p>We always welcome your queries and suggestions</p>
-              <form action="">
-                <div class="form-floating mb-3">
-                  <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
-                  <label for="floatingInput">Enter your full name</label>
-                </div>
-
-                <div class="form-floating mb-3">
-                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                  <label for="floatingInput">Enter your email address</label>
-                </div>
-
-                <div class="form-floating">
-                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                  <label for="floatingTextarea2">Message</label>
-                </div>
-
-                <input type="submit" class="formbtn">
-                
+              <form action="https://api.web3forms.com/submit" method="POST" data-aos="fade-up" data-aos-delay="600">
+                  <input type="hidden" name="access_key" value="ae0cc5ef-d7a2-4acd-a42d-031ccd0df8a7">
+                  
+                  <div class="form-floating mb-3">
+                      <input type="text" class="form-control" id="floatingInput" name="name" placeholder="name@example.com">
+                      <label for="floatingInput">Enter your full name</label>
+                  </div>
+              
+                  <div class="form-floating mb-3">
+                      <input type="email" class="form-control" id="floatingEmail" name="email" placeholder="name@example.com">
+                      <label for="floatingEmail">Enter your email address</label>
+                  </div>
+              
+                  <div class="form-floating">
+                      <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" name="message" style="height: 100px"></textarea>
+                      <label for="floatingTextarea2">Message</label>
+                  </div>
+              
+                  <input type="submit" class="formbtn">
               </form>
+            
             </div>
           </div>
 
